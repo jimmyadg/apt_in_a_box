@@ -14,8 +14,8 @@ function setup(){
 
 function draw(){
   var aspectRatio = windowWidth/windowHeight;
-  var imgW = img.width;
-  var imgH = img.height;
+  var imgW = 2796/aspectRatio /3;
+  var imgH = 2242/aspectRatio /3;
   background(255,242,236);
   img.resize(imgW,imgH);
   image(img,windowWidth/2-imgW/2,windowHeight/2-imgH/2);
