@@ -5,7 +5,7 @@ function preload(){
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
-  background(100);
+  background(255,242,236);
   // var aspectRatio = windowWidth/windowHeight;
   // var imgW = 2796/aspectRatio /3;
   // var imgH = 2242/aspectRatio /3;
