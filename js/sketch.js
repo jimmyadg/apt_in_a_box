@@ -1,7 +1,7 @@
-var img;
-function preload(){
-  img = loadImage("./img/frame.png");
-}
+// var img;
+// function preload(){
+//   img = loadImage("./img/frame.png");
+// }
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
