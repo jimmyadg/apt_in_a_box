@@ -40,8 +40,8 @@ function draw(){
   fill(c2);
   beginShape();
   noStroke();
-  vertex(467,201);
-  vertex(497,406);
+  vertex(466,201);
+  vertex(496,406);
   vertex(749,372);
   vertex(749,127);
   endShape(CLOSE);
@@ -61,7 +61,7 @@ function draw(){
   vertex(749,372);
   vertex(946,663);
   vertex(532,649);
-  vertex(497,406);
+  vertex(496,406);
   endShape(CLOSE);
   pop();
   //ellipse(mouseX,mouseY,10,10);
