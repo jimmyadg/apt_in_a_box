@@ -14,6 +14,8 @@
   <link href="css/creative.css" rel="stylesheet">
   <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
   <script src="js/p5.js"></script>
+  <script src="js/p5.dom.js"></script>
+
 </head>
 <body id="page-top">
 
@@ -60,7 +62,7 @@
           <h2 class="section-heading">Who We Are</h2>
           <hr class="light">
           <p class="text-faded">Apartment-in-a-Box is an online interface that allows customers to experience a stress free moving/decorating experience. We are the wholesaler and the distributor. Apartment-in-a-Box allows the customer to pick from a series of different apartment packages based on cost, aesthetic, and prospective need.</p>
-<!---mission statement
+          <!---mission statement
           <br>
           <h2 class="section-heading">Mission Statement</h2>
           <hr class="light">
@@ -120,11 +122,10 @@
     </div>
   </section>
 
-  <section class="no-padding" id="tryout">
-    <div class="sketch-holder">
 
-    </div>
-  </section>
+  <div id="tryout">
+    <h2 id="canvasH2">Press SPACE to generate new colors.</h2>
+  </div>
 
 
 
@@ -142,6 +143,28 @@
 
   <!-- Theme JavaScript -->
   <script src="js/creative.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var text = $("#canvasH2");
+    var pos = text.position();
+    $(window).scroll(function () {
+      var windowpos = $(window).scrollTop();
+      console.log(windowpos);
+      if (windowpos >1600) {
+        text.show();
+      }
+      else {
+        text.hide();
+      }
+    });
+
+    $("a[href='#tryout']").click(function() {
+      $("html, body").animate({ scrollTop: $(document).height() }, "fast");
+      return false;
+    });
+  });
+
+  </script>
 
 </body>
 

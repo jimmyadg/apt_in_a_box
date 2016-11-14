@@ -3,8 +3,11 @@
 //   img = loadImage("./img/frame.png");
 // }
 
+var c1,c2,c3,c4;
+
 function setup(){
-  createCanvas(windowWidth, windowHeight);
+  var myCanvas = createCanvas(windowWidth, windowHeight);
+  myCanvas.parent('tryout');
   background(255,242,236);
   // var aspectRatio = windowWidth/windowHeight;
   // var imgW = 2796/aspectRatio /3;
@@ -13,14 +16,19 @@ function setup(){
   // img.resize(imgW,imgH);
   // image(img,windowWidth/2-imgW/2,windowHeight/2-imgH/2);
   // console.log(aspectRatio);
+  c1 = '#000000';
+  c2 ='#FBF138';
+  c3='#CA0088';
+  c4='#61ACEC';
+
 }
 
 
 function draw(){
-  
+
   push();
   translate(windowWidth/8, windowHeight/8);
-  fill(0,255,0);
+  fill(c1);
   beginShape();
   noStroke();
   vertex(278,251);
@@ -29,7 +37,7 @@ function draw(){
   vertex(457,141);
   endShape(CLOSE);
 
-  fill(255,0,0);
+  fill(c2);
   beginShape();
   noStroke();
   vertex(467,201);
@@ -38,7 +46,7 @@ function draw(){
   vertex(749,127);
   endShape(CLOSE);
 
-  fill(0,0,255);
+  fill(c3);
   beginShape();
   noStroke();
   vertex(749,127);
@@ -47,16 +55,7 @@ function draw(){
   vertex(749,372);
   endShape(CLOSE);
 
-  fill(255,255,0)
-  beginShape();
-  noStroke();
-  vertex(749,127);
-  vertex(946,146);
-  vertex(946,663);
-  vertex(749,372);
-  endShape(CLOSE);
-
-  fill(0,255,255)
+  fill(c4)
   beginShape();
   noStroke();
   vertex(749,372);
@@ -66,4 +65,13 @@ function draw(){
   endShape(CLOSE);
   pop();
   //ellipse(mouseX,mouseY,10,10);
+}
+
+function keyPressed(){
+  if(keyCode == 32){
+    c1 ='#' + Math.random().toString(16).slice(2, 8).toUpperCase();
+    c2 ='#' + Math.random().toString(16).slice(2, 8).toUpperCase();
+    c3 ='#' + Math.random().toString(16).slice(2, 8).toUpperCase();
+    c4 ='#' + Math.random().toString(16).slice(2, 8).toUpperCase();
+  }
 }

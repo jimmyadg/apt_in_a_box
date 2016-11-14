@@ -64,7 +64,7 @@ aside {
   padding: 0;
 }
 .navbar-nav{
-    margin: 1.5% 5% 1% 5%;
+  margin: 1.5% 5% 1% 5%;
 }
 .navbar-default {
   background-color: white;
@@ -456,4 +456,15 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+#canvasH2{
+  bottom:40;
+  right:25%;
+  left:40%;
+  margin-left:-150px;
+  text-align: center;
+  position: fixed;
+  display: none;
+
 }
