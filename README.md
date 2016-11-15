@@ -1,1 +1,3 @@
-# apt_in_a_box
+# APT IN-A-BOX
+
+## Mock up website for APT IN-A-BOX branding identity.
